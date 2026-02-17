@@ -8,3 +8,8 @@ This package enables you to export your Org CV/Resume using the default ~org-exp
 * Installation
 
 In Doom Emacs use the following inside the =packages.el=:
+
+#+begin_src emacs-lisp
+(package! ox-ciescv
+  :recipe (:host github :repo "mgkallits/ox-ciescv"))
+#+end_src

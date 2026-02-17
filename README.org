@@ -1,5 +1,7 @@
 #+title: OX CiesCV
 
+Inspiration drawn from: [[https://www.latextemplates.com/template/cies-resume-cv][here]].
+
 This package enables you to export your Org CV/Resume using the default ~org-export-dispatch~ command (under the l p) by specifying the LaTeX class to =ciescv=. It is optimized for Greek using XeLaTeX.
 
 

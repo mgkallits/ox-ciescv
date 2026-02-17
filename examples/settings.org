@@ -1,0 +1,21 @@
+#+LATEX_HEADER: \usepackage{polyglossia}
+#+LATEX_HEADER: \usepackage{fontspec}
+
+#+LATEX_HEADER: % Load EB Garamond for Latin script
+#+LATEX_HEADER: \setmainfont{EB Garamond}[
+#+LATEX_HEADER:     Ligatures=TeX,
+# #+LATEX_HEADER:     Numbers=OldStyle,
+#+LATEX_HEADER:     Scale=1.10
+#+LATEX_HEADER: ]
+#+LATEX_HEADER: % You need a font that supports Greek script
+#+LATEX_HEADER: \newfontfamily\greekfont{EB Garamond}[
+#+LATEX_HEADER:     Script=Greek,
+#+LATEX_HEADER:     Ligatures=TeX,
+#+LATEX_HEADER: ]
+
+#+LATEX_HEADER: \setdefaultlanguage{english}
+#+LATEX_HEADER: \setotherlanguage{greek}
+
+#+latex_header: \begin{hyphenrules}{english}
+# #+latex_header: \hyphenation{con-di-tion-al con-trol ver-sion Ju-pi-ter}
+#+latex_header: \end{hyphenrules}

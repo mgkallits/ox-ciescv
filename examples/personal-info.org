@@ -1,0 +1,9 @@
+# #+FIRSTNAME: John
+# #+LASTNAME: Smith
+#+BIRTHDATE: November 20, 1987
+#+PHONE: +1 (111) 111-1112
+#+WEBSITE: www.johnsmith.com
+#+ADDRESS: 123 Broadway
+#+CITY: City, 12345
+#+STATE: State
+#+COUNTRY: Country

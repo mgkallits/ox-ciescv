@@ -1,0 +1,173 @@
+#+TITLE: CV/Resume Example
+#+AUTHOR: John Smith
+#+EMAIL: john@smith.com
+#+INCLUDE: personal-info.org
+#+INCLUDE: settings.org
+#+LATEX_CLASS: ciescv
+#+LATEX_COMPILER: xelatex
+* Summary
+:PROPERTIES:
+:CV_ENV: summary
+:END:
+
+/A summary of your interests, achievements, history, topic of study or any other short summary of your professional life./
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis scelerisque vestibulum. Sed ut sapien et dui mollis condimentum. Phasellus enim lectus, dignissim vitae velit sit amet, porttitor tincidunt lectus. Vivamus adipiscing volutpat lacinia. Sed dui ipsum, iaculis id facilisis sed, dapibus quis lacus. Quisque blandit hendrerit malesuada. Nunc sollicitudin nisl nunc, vitae luctus leo tincidunt vel.
+
+Pellentesque bibendum convallis adipiscing. Suspendisse facilisis id massa a lacinia. Nullam odio nibh, placerat at fermentum in, tincidunt eu ipsum. Nullam adipiscing lacus id dui suscipit commodo. Vestibulum iaculis leo imperdiet, porta lorem eu, tempus tortor. Donec interdum risus ullamcorper, vestibulum nulla ut, tincidunt ante. Duis adipiscing auctor nisi, quis tempor tortor ornare aliquet. Aenean at tempor leo. Nam eleifend venenatis elit id aliquet. Mauris quis lacinia dolor, a posuere tellus. Suspendisse nec augue pretium, condimentum risus vitae, dignissim tellus. Proin gravida ante eget massa lacinia consequat. Integer pharetra vel ligula sed vulputate. Integer eget erat quam. Proin adipiscing lorem ac purus adipiscing, non ullamcorper nisi porttitor.
+
+* Experience
+
+** [[http://www.intellecap.com][Intellecap]]/[[http://istpl.in][ISTPL]]
+:PROPERTIES:
+:LOCATION: Mumbai, Pune & Hyderabad, India
+:END:
+
+*** IT Consultant
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM: <2008-11-01>
+:TO: <2009-02-28>
+:END:
+
+Intellecap is a social-sector advisory firm serving corporates, non-profits, development agencies and governments working in developing markets. I assessed their software development team and methodologies, trained their developers and build several web applications. One of those apps is [[http://www.mostfit.org][Mostfit]], an open source MIS for [[http://en.wikipedia.org/wiki/Microcredit][microcredit]] lenders.
+
+*** IT & Strategy Consultant
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM: <2010-01-01>
+:TO: <2011-08-31>
+:END:
+
+[[http://www.mostfit.org][Mostfit]] became a success and I was called in to solve several technical challenges, look at potential growth strategies, and assist in making a business case for this product in a company of its own.
+
+*** Chief Technology Officer
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM: <2011-10-01>
+:TO: present
+:END:
+
+Joined the C-family to make [[http://www.mostfit.org][Mostfit]] the nr.1 software solution for micro credit lenders around the globe.
+
+** [[http://www.dharmapublishing.com][Dharma Publishing]]
+:PROPERTIES:
+:LOCATION: near San Francisco (CA), USA
+:END:
+
+*** IT Consultant
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM: <2009-11-01>
+:TO: <2009-12-31>
+:END:
+
+Dharma Publishing, the worlds largest Buddhist publisher, is a non-profit, all-volunteer organization that helps to preserve Tibetan Buddhism and culture. I build them a [[http://www.dharmapublishing.com][web store]], and moved the infrastructure of all their web media to a nearly zero maintenance setup that they can maintain themselves.
+
+** [[http://www.kde.org][KDE]]
+:PROPERTIES:
+:LOCATION: [[http://edu.kde.org/kturtle][edu.kde.org/kturtle]]
+:END:
+
+*** Software Engineer
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM: <2003-12-01>
+:TO: present
+:END:
+
+KTurtle is an educational programming environment that simplifies learning the basics of programming. At early age I learned programming using MSX-LOGO, by creating KTurtle I want to ensure future generation's access to a similar piece of software. I was honored when KTurtle got admitted to KDE in 2003.
+
+** [[http://truetopiaproject.org][Truetopia Project]]
+:PROPERTIES:
+:LOCATION: [[http://truetopiaproject.org][truetopiaproject.org]]
+:END:
+
+*** Initiator
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM: <2007-11-01>
+:TO: <2010-04-30>
+:END:
+
+The Truetopia Project is an open source web application (Rails) to facilitate self-governing communities. It provides a workflow for collaborative problem identification and solution design.
+
+** [[http://www.opendream.th][Opendream]]
+:PROPERTIES:
+:LOCATION: Bangkok, Thailand
+:END:
+
+*** IT Consultant
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM: <2009-08-01>
+:TO: <2009-09-30>
+:END:
+
+Architected and largely implemented an open source media sharing web service (REST api) that facilitates video uploads, transcoding and streaming. Coached their development team on system design, Ruby development (using Merb/Rails) and testing strategies such as TDD/BDD.
+
+#+BEGIN_CENTER
+/Please refer to [[http://www.linkedin.com/in/ciesbreijs][my Linkedin profile]] for the complete list of work experiences along with recommendations./
+#+END_CENTER
+
+* Education
+
+** Erasmus University Rotterdam
+:PROPERTIES:
+:LOCATION: Rotterdam, The Netherlands
+:END:
+
+*** Bachelor degree in Computer Science & Economics
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM: <2004>
+:TO: <2007>
+:END:
+
+Focussed on the economics of open source, rapid application development (RAD) and the semantic web technology stack (RDF/RDFS, OWL and SPARQL).
+
+** Technical University Delft
+:PROPERTIES:
+:LOCATION: Delft, The Netherlands
+:END:
+
+*** Industrial Design Engineering /(discontinued)/
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM: <2001>
+:TO: <2002>
+:END:
+
+** Libanon Lyceum
+:PROPERTIES:
+:LOCATION: Rotterdam, The Netherlands
+:END:
+
+*** VWO /(pre-university secondary education)/
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM: <1994>
+:TO: <2000>
+:END:
+
+* Skills
+:PROPERTIES:
+:CV_ENV: skills
+:END:
+
+** Technical specialties
+
+Software design and implementation, with(in) a team. I love Ruby/Python/Java/C++ and flirt regularly with Haskell. Solid knowledge of web technologies: HTML+CSS, XML, RDF, REST, SOAP and JavaScript (mainly jQuery). Linux administration skills: bash, Apache, MySQL, PostgreSQL, virtualization/cloud (OpenVZ, VMware, KVM, Xen and EC2), datacenter automation (Puppet and Chef), continuous integration (Hudson/Jenkins).
+
+** Natural languages
+
+Dutch /(mother tongue)/, English /(full professional proficiency)/, German /(limited working proficiency)/, French /(elementary proficiency)/ and Mandarin Chinese /(beginner)/.
+
+* Interests
+:PROPERTIES:
+:CV_ENV: skills
+:END:
+
+** Non-exhaustive and in alphabetical order
+
+Art, Buddhism, cryptography, music, open source, philosophy, software engineering, travel, typography (e.g. graphic design, LaTeX), UI/UX and vegetarian cooking.

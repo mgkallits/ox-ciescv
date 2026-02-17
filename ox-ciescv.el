@@ -571,4 +571,13 @@ ORIG-FN is `org-latex-export-to-pdf'; ARGS are forwarded unchanged."
             '((name . org-ciescv--lp-redirect)))
 
 (provide 'ox-ciescv)
+
+;;; Automatic Loading
+
+;;;###autoload
+(with-eval-after-load 'org
+  (require 'ox-ciescv))
+
+(provide 'ox-ciescv)
+
 ;;; ox-ciescv.el ends here

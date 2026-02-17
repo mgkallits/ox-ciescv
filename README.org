@@ -1,0 +1,3 @@
+#+title: OX CiesCV
+
+This package enables you to export your Org CV/Resume using the default ~org-export-dispatch~ command (under the l p) by specifing the LaTeX class to =ciescv=.

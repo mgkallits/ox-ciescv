@@ -1,0 +1,223 @@
+% Created 2026-02-17 Tue 23:14
+% Intended LaTeX compiler: xelatex
+\documentclass[10pt,a4paper]{article}
+\usepackage{polyglossia}
+\usepackage{fontspec}
+% Load EB Garamond for Latin script
+\setmainfont{EB Garamond}[
+Ligatures=TeX,
+Scale=1.10
+]
+% You need a font that supports Greek script
+\newfontfamily\greekfont{EB Garamond}[
+Script=Greek,
+Ligatures=TeX,
+]
+\setdefaultlanguage{english}
+\setotherlanguage{greek}
+\begin{hyphenrules}{english}
+\end{hyphenrules}
+
+
+%%% LOAD AND SETUP PACKAGES
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{multicol}
+\usepackage{mdwlist}
+\usepackage{relsize}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\definecolor{dark-blue}{rgb}{0.15,0.15,0.4}
+\hypersetup{colorlinks, linkcolor={dark-blue}, citecolor={dark-blue}, urlcolor={dark-blue}}
+
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%	LENGTHS
+%----------------------------------------------------------------------------------------
+
+\newlength{\newparindent}
+\addtolength{\newparindent}{\parindent}
+
+\newlength{\doubleparindent}
+\addtolength{\doubleparindent}{\parindent}
+
+%----------------------------------------------------------------------------------------
+%	STRUCTURAL COMMANDS
+%----------------------------------------------------------------------------------------
+
+% Indented list environment used by all section commands.
+\newenvironment{indentsection}
+  {\begin{list}{}
+    {\setlength{\leftmargin}{\newparindent}
+     \setlength{\parsep}{3pt}
+     \setlength{\parskip}{0pt}
+     \setlength{\itemsep}{0pt}
+     \setlength{\topsep}{0pt}}}
+  {\end{list}}
+
+% Main title (name) with date of birth or subtitle
+\newcommand*\maintitle[2]{
+  \noindent{\LARGE \textbf{#1}}\ \ \ \emph{#2}\vspace{0.3em}}
+
+% Top level section title
+\newcommand*\roottitle[1]{
+  \subsection*{#1}\vspace{-0.3em}\nopagebreak[4]}
+
+% Section title used for a new employer.
+\newcommand{\headedsection}[3]{
+  \nopagebreak[4]
+  \begin{indentsection}
+    \item[]\textscale{1.1}{#1}\hfill#2\par#3
+  \end{indentsection}
+  \nopagebreak[4]}
+
+% Section title used for a new position.
+\newcommand{\headedsubsection}[3]{
+  \nopagebreak[4]
+  \begin{indentsection}
+    \item[]\textbf{#1}\hfill\emph{#2}\par#3
+  \end{indentsection}
+  \nopagebreak[4]}
+
+% Body text (indented)
+\newcommand{\bodytext}[1]{
+  \nopagebreak[4]
+  \begin{indentsection}
+    \item[]\setlength{\parskip}{0.4em}#1
+  \end{indentsection}
+  \pagebreak[2]}
+
+% Section title where body text starts immediately after (used for skills)
+\newcommand{\inlineheadsection}[2]{
+  \begin{basedescript}{\setlength{\leftmargin}{\doubleparindent}}
+    \item[\hspace{\newparindent}\textbf{#1}]#2
+  \end{basedescript}
+  \vspace{-1.6em}}
+
+% Custom acronyms command
+\newcommand*\acr[1]{\textscale{.85}{#1}}
+
+% Custom bullet point for separating contact info items
+\newcommand*\bull{\ \ \raisebox{-0.365em}[-1em][-1em]{\textscale{4}{$\cdot$}} \ }
+
+% Vspace variants that interact with page breaking
+\newcommand{\breakvspace}[1]{\pagebreak[2]\vspace{#1}\pagebreak[2]}
+\newcommand{\nobreakvspace}[1]{\nopagebreak[4]\vspace{#1}\nopagebreak[4]}
+
+% Horizontal rule with configurable space before (#1) and after (#2)
+\newcommand{\spacedhrule}[2]{\breakvspace{#1}\hrule\nobreakvspace{#2}}
+\begin{document}
+\maintitle{John Smith}{November 20, 1987}
+
+\noindent\href{mailto:john@smith.com}{john@smith.com}\bull \textsmaller{+}{\addfontfeatures{Numbers=Lining}1 (111) 111-1112}\bull \href{www.johnsmith.com}{www.johnsmith.com}\\
+123 Broadway\bull City, 12345\bull State\bull Country
+\spacedhrule{0.9em}{-0.4em}
+\roottitle{Summary}
+\vspace{-1.3em}
+\begin{multicols}{2}
+\noindent \emph{A summary of your interests, achievements, history, topic of study or any other short summary of your professional life.}\\
+
+\noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis scelerisque vestibulum. Sed ut sapien et dui mollis condimentum. Phasellus enim lectus, dignissim vitae velit sit amet, porttitor tincidunt lectus. Vivamus adipiscing volutpat lacinia. Sed dui ipsum, iaculis id facilisis sed, dapibus quis lacus. Quisque blandit hendrerit malesuada. Nunc sollicitudin nisl nunc, vitae luctus leo tincidunt vel.
+
+Pellentesque bibendum convallis adipiscing. Suspendisse facilisis id massa a lacinia. Nullam odio nibh, placerat at fermentum in, tincidunt eu ipsum. Nullam adipiscing lacus id dui suscipit commodo. Vestibulum iaculis leo imperdiet, porta lorem eu, tempus tortor. Donec interdum risus ullamcorper, vestibulum nulla ut, tincidunt ante. Duis adipiscing auctor nisi, quis tempor tortor ornare aliquet. Aenean at tempor leo. Nam eleifend venenatis elit id aliquet. Mauris quis lacinia dolor, a posuere tellus. Suspendisse nec augue pretium, condimentum risus vitae, dignissim tellus. Proin gravida ante eget massa lacinia consequat. Integer pharetra vel ligula sed vulputate. Integer eget erat quam. Proin adipiscing lorem ac purus adipiscing, non ullamcorper nisi porttitor.
+\end{multicols}
+\spacedhrule{0.5em}{-0.4em}
+\roottitle{Experience}
+\headedsection
+{\href{http://www.intellecap.com}{Intellecap}/\href{http://istpl.in}{ISTPL}}
+{\textsc{Mumbai, Pune \& Hyderabad, India}} {
+\headedsubsection
+{IT Consultant}
+{Nov '08 -- Feb '09}
+{\bodytext{Intellecap is a social-sector advisory firm serving corporates, non-profits, development agencies and governments working in developing markets. I assessed their software development team and methodologies, trained their developers and build several web applications. One of those apps is \href{http://www.mostfit.org}{Mostfit}, an open source MIS for \href{http://en.wikipedia.org/wiki/Microcredit}{microcredit} lenders.}}
+\headedsubsection
+{IT \& Strategy Consultant}
+{Jan '10 -- Aug '11}
+{\bodytext{\href{http://www.mostfit.org}{Mostfit} became a success and I was called in to solve several technical challenges, look at potential growth strategies, and assist in making a business case for this product in a company of its own.}}
+\headedsubsection
+{Chief Technology Officer}
+{Oct '11 -- present}
+{\bodytext{Joined the C-family to make \href{http://www.mostfit.org}{Mostfit} the nr.1 software solution for micro credit lenders around the globe.}}
+}
+\headedsection
+{\href{http://www.dharmapublishing.com}{Dharma Publishing}}
+{\textsc{near San Francisco (CA), USA}} {
+\headedsubsection
+{IT Consultant}
+{Nov '09 -- Dec '09}
+{\bodytext{Dharma Publishing, the worlds largest Buddhist publisher, is a non-profit, all-volunteer organization that helps to preserve Tibetan Buddhism and culture. I build them a \href{http://www.dharmapublishing.com}{web store}, and moved the infrastructure of all their web media to a nearly zero maintenance setup that they can maintain themselves.}}
+}
+\headedsection
+{\href{http://www.kde.org}{KDE}}
+{\textsc{{[}[http://edu.kde.org/kturtle][edu.kde.org/kturtle]]}} {
+\headedsubsection
+{Software Engineer}
+{Dec '03 -- present}
+{\bodytext{KTurtle is an educational programming environment that simplifies learning the basics of programming. At early age I learned programming using MSX-LOGO, by creating KTurtle I want to ensure future generation's access to a similar piece of software. I was honored when KTurtle got admitted to KDE in 2003.}}
+}
+\headedsection
+{\href{http://truetopiaproject.org}{Truetopia Project}}
+{\textsc{{[}[http://truetopiaproject.org][truetopiaproject.org]]}} {
+\headedsubsection
+{Initiator}
+{Nov '07 -- Apr '10}
+{\bodytext{The Truetopia Project is an open source web application (Rails) to facilitate self-governing communities. It provides a workflow for collaborative problem identification and solution design.}}
+}
+\headedsection
+{\href{http://www.opendream.th}{Opendream}}
+{\textsc{Bangkok, Thailand}} {
+\headedsubsection
+{IT Consultant}
+{Aug '09 -- Sep '09}
+{\bodytext{Architected and largely implemented an open source media sharing web service (REST api) that facilitates video uploads, transcoding and streaming. Coached their development team on system design, Ruby development (using Merb/Rails) and testing strategies such as TDD/BDD.
+
+\begin{center}
+\emph{Please refer to \href{http://www.linkedin.com/in/ciesbreijs}{my Linkedin profile} for the complete list of work experiences along with recommendations.}
+\end{center}}}
+}
+\spacedhrule{0.5em}{-0.4em}
+\roottitle{Education}
+\headedsection
+{Erasmus University Rotterdam}
+{\textsc{Rotterdam, The Netherlands}} {
+\headedsubsection
+{Bachelor degree in Computer Science \& Economics}
+{2004 -- 2007}
+{\bodytext{Focussed on the economics of open source, rapid application development (RAD) and the semantic web technology stack (RDF/RDFS, OWL and SPARQL).}}
+}
+\headedsection
+{Technical University Delft}
+{\textsc{Delft, The Netherlands}} {
+\headedsubsection
+{Industrial Design Engineering \emph{(discontinued)}}
+{2001 -- 2002}
+{\bodytext{}}
+}
+\headedsection
+{Libanon Lyceum}
+{\textsc{Rotterdam, The Netherlands}} {
+\headedsubsection
+{VWO \emph{(pre-university secondary education)}}
+{1994 -- 2000}
+{\bodytext{}}
+}
+\spacedhrule{0.5em}{-0.4em}
+\roottitle{Skills}
+\inlineheadsection
+{Technical specialties:}
+{Software design and implementation, with(in) a team. I love Ruby/Python/Java/C++ and flirt regularly with Haskell. Solid knowledge of web technologies: HTML+CSS, XML, RDF, REST, SOAP and JavaScript (mainly jQuery). Linux administration skills: bash, Apache, MySQL, PostgreSQL, virtualization/cloud (OpenVZ, VMware, KVM, Xen and EC2), datacenter automation (Puppet and Chef), continuous integration (Hudson/Jenkins).}
+\inlineheadsection
+{Natural languages:}
+{Dutch \emph{(mother tongue)}, English \emph{(full professional proficiency)}, German \emph{(limited working proficiency)}, French \emph{(elementary proficiency)} and Mandarin Chinese \emph{(beginner)}.}
+\spacedhrule{1.6em}{-0.4em}
+\roottitle{Interests}
+\inlineheadsection
+{Non-exhaustive and in alphabetical order:}
+{Art, Buddhism, cryptography, music, open source, philosophy, software engineering, travel, typography (e.g. graphic design, \LaTeX{}), UI/UX and vegetarian cooking.}
+
+\end{document}
